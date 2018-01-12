@@ -1,8 +1,9 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 50, window.innerWidth/window.innerHeight, 0.5, 100 );
 var rocket; 
-var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'), antialias: true});
-renderer.setSize( window.innerWidth, window.innerHeight );
+var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'), antialias: true, alpha: true});
+renderer.setSize( window.innerWidth , window.innerHeight );
+renderer.setClearColor(0x000000, 0);
 
 //document.body.appendChild( renderer.domElement );
  
